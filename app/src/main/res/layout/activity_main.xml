@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                style="@style/toggleButton"
+                android:background="@drawable/ic_toggle_bg"
+                android:padding="30dp" />
+
+            <TextView
+                android:textColor="#FFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room 1"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                style="@style/toggleButton"
+                android:background="@drawable/ic_toggle_bg"
+                android:padding="30dp" />
+            <TextView
+                android:textColor="#FFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room 2"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            style="@style/toggleButton"
+            android:background="@drawable/ic_toggle_bg"
+            android:padding="30dp" />
+        <TextView
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room 3"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_buttons"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_register"
+        android:id="@+id/buttonRegister" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_buttons"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_remove_user"
+        android:id="@+id/buttonRemoveUser" />
+    <!--
+    <ToggleButton
+        android:id="@+id/toggleButtonmotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Motion sensor Armed"
+        android:textOff="Motion sensor Disarmed"
+        android:background="@drawable/my_btn_toggle"
+        android:padding="30dp" /> -->
+
+
+    </LinearLayout>
